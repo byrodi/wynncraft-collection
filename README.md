@@ -12,6 +12,6 @@ Personal collection tracker for [Wynncraft](https://wynncraft.com) (Minecraft MM
 
 - **Overall roll** — weighted quality of an item's identifications. **Green** = ≥80%, **blue** = ≥95% (the most valuable / collectible rolls).
 - **Full green** — every individual stat on the item rolled ≥80%, not just the overall.
-- **Godly** — an exceptionally high overall roll; the best examples in the collection.
+- **Godly** — main scale roll >90%; the best examples in the collection.
 
 Data sourced from the [Wynncraft API v3](https://api.wynncraft.com/v3/) and verified in-game.
