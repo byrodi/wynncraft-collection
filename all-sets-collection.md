@@ -173,15 +173,15 @@ Checklist of every set item in the game. Mark `[x]` what you own.
 - [x] leggings — **Fire Relic Leggings** (rare, Lvl 40)  🎲
   - [ ] 🟢 green 80%+
 
-## 21. Relic — Lvl 40  (own 2/4 · 🟢 green 1/4)
+## 21. Relic — Lvl 40  (own 4/4 · 🟢 green 3/4 ✅)
 - [x] boots — **Relic Boots** (rare, Lvl 25)  🎲
   - [ ] 🟢 green 80%+
 - [x] helmet — **Relic Helmet** (rare, Lvl 30)  🎲
   - [x] 🟢 green 80%+
-- [ ] chestplate — **Relic Chestplate** (rare, Lvl 35)  🎲
-  - [ ] 🟢 green 80%+
-- [ ] leggings — **Relic Leggings** (rare, Lvl 40)  🎲
-  - [ ] 🟢 green 80%+
+- [x] chestplate — **Relic Chestplate** (rare, Lvl 35)  🎲
+  - [x] 🟢 green 80%+
+- [x] leggings — **Relic Leggings** (rare, Lvl 40)  🎲
+  - [x] 🟢 green 80%+
 
 ## 22. Thunder Relic — Lvl 40  (own 3/4 · 🟢 green 3/4)
 - [x] boots — **Thunder Relic Boots** (rare, Lvl 25)  🎲
