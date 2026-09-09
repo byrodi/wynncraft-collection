@@ -2,6 +2,8 @@
 
 Personal collection tracker for [Wynncraft](https://wynncraft.com) (Minecraft MMORPG) — owned gear and item-quality milestones.
 
+Live gallery: **https://stependiant.github.io/wynncraft-collection/**
+
 ## Contents
 
 - **[`all-sets-collection.md`](all-sets-collection.md)** — checklist of every set item in the game (65 sets, 222 items), sorted by set level. Tracks ownership and which pieces are obtained at green overall (≥80% roll).

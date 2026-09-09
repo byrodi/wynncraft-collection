@@ -1,0 +1,26 @@
+{% assign shots = site.static_files | where_exp: "f", "f.path contains include.dir" | where: "extname", ".png" | sort: "name" %}
+<section class="section" id="{{ include.id }}">
+  <div class="section__head">
+    <h2 class="section__title">{{ include.title }}</h2>
+    <span class="section__count">{{ shots | size }}</span>
+  </div>
+  <p class="section__note">{{ include.note }}</p>
+
+  <div class="grid">
+    {% for f in shots %}
+      {% assign words = f.basename | replace: '_', ' ' | split: ' ' %}
+      {% capture item_name %}{% for w in words %}{{ w | capitalize }} {% endfor %}{% endcapture %}
+      {% assign item_name = item_name | strip %}
+      <article class="card" data-name="{{ item_name | downcase }}">
+        <h3 class="card__name">{{ item_name }}</h3>
+        <button class="card__shot" type="button" data-name="{{ item_name }}">
+          <span class="card__frame">
+            <img src="{{ f.path | relative_url }}" alt="{{ item_name }} tooltip with rolled stats" loading="lazy">
+          </span>
+        </button>
+      </article>
+    {% endfor %}
+  </div>
+
+  <p class="empty" hidden>No item matches the search.</p>
+</section>

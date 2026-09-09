@@ -1,0 +1,7 @@
+title: Wynncraft Collection
+description: Owned mythics, full green and godly rolls
+baseurl: "/wynncraft-collection"
+url: "https://stependiant.github.io"
+exclude:
+  - README.md
+  - all-sets-collection.md

@@ -1,0 +1,74 @@
+---
+---
+{% assign green = site.static_files | where_exp: "f", "f.path contains 'full-green-mythics'" | where: "extname", ".png" %}
+{% assign godly = site.static_files | where_exp: "f", "f.path contains 'godly-mythics'" | where: "extname", ".png" %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wynncraft Collection — owned mythics</title>
+<meta name="description" content="Screenshots of owned Wynncraft mythics: full green and godly rolls.">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+
+<header class="page-header">
+  <div class="wrap">
+    <h1 class="page-title">Wynncraft Collection</h1>
+    <p class="page-lead">
+      Owned mythics, one in-game tooltip per item. <b>Full green</b> means every identified stat rolled 80% or higher.
+      <b>Godly</b> means the main scale rolled above 90%, even when the overall stays low.
+    </p>
+    <ul class="totals">
+      <li class="total"><span class="total__n">{{ green | size }}</span> <span class="total__label">full green</span></li>
+      <li class="total"><span class="total__n">{{ godly | size }}</span> <span class="total__label">godly</span></li>
+    </ul>
+
+    <div class="toolbar">
+      <label class="visually-hidden" for="search">Search by item name</label>
+      <input class="search" id="search" type="search" placeholder="Search: inferno, gaia, idol…" autocomplete="off">
+      <nav class="jump" aria-label="Sections">
+        <a href="#full-green">Full green</a>
+        <a href="#godly">Godly</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  {% include gallery.html
+     dir='full-green-mythics'
+     id='full-green'
+     title='Full green'
+     note='Every identified stat on the item rolled 80% or higher, not only the overall.' %}
+
+  {% include gallery.html
+     dir='godly-mythics'
+     id='godly'
+     title='Godly'
+     note='Main scale roll above 90%. These are kept for the scale, so the other stats can sit anywhere.' %}
+</main>
+
+<footer class="page-footer">
+  <div class="wrap">
+    <p>
+      Screenshots live in <code>full-green-mythics/</code> and <code>godly-mythics/</code> in the
+      <a href="https://github.com/stependiant/wynncraft-collection">repository</a>. Drop a new PNG into either folder,
+      push, and it shows up here on the next build.
+    </p>
+  </div>
+</footer>
+
+<dialog class="viewer" id="viewer" aria-label="Item tooltip">
+  <div class="viewer__bar">
+    <h2 class="viewer__name"></h2>
+    <span class="viewer__hint">2x view</span>
+    <button class="viewer__close" type="button" aria-label="Close">✕</button>
+  </div>
+  <img src="" alt="">
+</dialog>
+
+<script src="{{ '/assets/site.js' | relative_url }}"></script>
+</body>
+</html>
