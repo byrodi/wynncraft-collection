@@ -209,7 +209,7 @@ body {
   display: inline-block;
   width: 100%;
   margin: 0 0 24px;
-  padding: 16px;
+  padding: 12px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background: var(--surface);
@@ -218,16 +218,6 @@ body {
 }
 
 .card[hidden] { display: none; }
-
-.card__name {
-  margin: 0 0 14px;
-  font-family: var(--pixel);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--plum);
-  text-shadow: var(--pixel-shadow);
-  overflow-wrap: anywhere;
-}
 
 .card__shot {
   display: block;

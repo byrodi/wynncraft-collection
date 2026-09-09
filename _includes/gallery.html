@@ -12,7 +12,6 @@
       {% capture item_name %}{% for w in words %}{{ w | capitalize }} {% endfor %}{% endcapture %}
       {% assign item_name = item_name | strip %}
       <article class="card" data-name="{{ item_name | downcase }}">
-        <h3 class="card__name">{{ item_name }}</h3>
         <button class="card__shot" type="button" data-name="{{ item_name }}">
           <span class="card__frame">
             <img src="{{ f.path | relative_url }}" alt="{{ item_name }} tooltip with rolled stats" loading="lazy">
