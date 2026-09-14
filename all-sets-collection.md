@@ -15,7 +15,7 @@ Checklist of every set item in the game. Mark `[x]` what you own.
 - In the set header: `own X/Y` — pieces owned, `🟢 green X/R` — pieces at green 80%+ (R = number of rollable), `· fixed stats` — set has no rolls.
 - A set is "green complete" when every rollable piece is marked `🟢 green 80%+`.
 
-> Green overall 80%+ is the "green" threshold per the valuation methodology (see `../ingredients/AGENTS.md`). 95%+ is "blue", the most expensive/collectible roll.
+> Green overall 80%+ is the "green" threshold. 95%+ is "blue", the most expensive/collectible roll.
 > Refresh data: `curl -sS "https://api.wynncraft.com/v3/item/database?fullResult" -o items.json` and regroup by the `sets` field.
 
 ---
